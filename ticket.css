@@ -1,0 +1,131 @@
+@keyframes fadeInScale {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes bounceIn {
+  0% { opacity: 0; transform: scale(0.5); }
+  60% { opacity: 1; transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+.animate-fadeInScale {
+  animation: fadeInScale 0.6s ease-out forwards;
+}
+.animate-bounceIn {
+  animation: bounceIn 0.5s ease-out forwards;
+}
+
+
+body {
+    background-color: #f8f9fa;
+  }
+
+  /* Styling utama footer */
+.footer {
+  background-color: #3b3d3c; /* Warna background gelap */
+  color: white;
+  padding: 40px 0;
+  font-size: 14px;
+}
+
+.footer-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Mengatur setiap kolom dalam footer */
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+/* Styling untuk judul setiap bagian */
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #f1f1f1;
+}
+
+/* Styling untuk daftar link */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #dcdcdc;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #28a745; /* Warna hijau saat hover */
+}
+
+/* Styling untuk bagian newsletter */
+.newsletter input {
+  width: 70%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.newsletter button {
+  padding: 8px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.newsletter button:hover {
+  background-color: #218838;
+}
+
+/* Bagian bawah footer */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+}
+
+/* Styling untuk ikon media sosial */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #bdc3c7;
+  margin-right: 10px;
+  border-radius: 50%;
+  color: #bdc3c7;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.social-icons a:hover {
+  color: #28a745;
+  border-color: #ecf0f1;
+}
+
+  
+  .card {
+    max-width: 600px;
+    margin: 0 auto;
+  }

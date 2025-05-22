@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BabyMonster Members</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body class="bg-gray-900 text-white">
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <img src="logo bm.jpg" alt="Logo" class="h-8 w-8 rounded">
+        <span class="text-lg font-bold">BabyMonster</span>
+      </div>
+      <ul class="flex space-x-4">
+        <li><a href="index.html" class="hover:text-pink-400">Home</a></li>
+        <li><a href="#about" class="hover:text-pink-400">About</a></li>
+        <li><a href="group.html" class="hover:text-pink-400">Member</a></li>
+        <li><a href="portofolio.html" class="hover:text-pink-400">Portofolio</a></li>
+        <li><a href="buyticket.html" class="hover:text-pink-400">Buy ticket</a></li>
+        
+      </ul>
+      <div class="relative">
+        <input type="text" placeholder="Search..." class="px-3 py-1 rounded bg-gray-700 text-white">
+        <button class="absolute right-0 top-0 mt-1 mr-2 text-white"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Members Section -->
+  <section class="py-10" id="collection">
+    <div class="text-center mb-8">
+      <h2 class="text-3xl font-bold border-b-4 border-pink-500 inline-block pb-2">Member of Babymonster</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
+      <!-- Member Card Template -->
+      <script>
+        const members = [
+          { name: "Kawai Ruka", role: "Main Dancer", img: "ruka.jpg" },
+          { name: "Pharita", role: "Main Visual", img: "pharita icon.jpg" },
+          { name: "Enami Asa", role: "Main Rapper", img: "asa.jpg" },
+          { name: "Jung Ahyeon", role: "Main vocal and center", img: "ahyeon.jpg" },
+          { name: "Shin Haram/rami", role: "Main vocal", img: "rami.jpg" },
+          { name: "Lee Dain", role: "Main Visual", img: "rora.jpg" },
+          { name: "Chiquita", role: "Maknae", img: "chiquita.jpg" },
+        ];
+
+        window.onload = () => {
+          const container = document.querySelector("#collection .grid");
+          members.forEach(member => {
+            container.innerHTML += `
+              <div class="bg-gray-800 p-4 rounded-lg shadow-md hover:shadow-pink-500 transition">
+                <img src="${member.img}" alt="${member.name}" class="w-full h-48 object-cover rounded mb-4">
+                <h3 class="text-xl font-semibold">${member.name}</h3>
+                <p class="text-pink-400">${member.role}</p>
+              </div>`;
+          });
+        }
+      </script>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-10">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-lg font-bold mb-2">Sailer</h3>
+        <p>123 Adam Street, New York, NY 535022</p>
+        <p>Phone: +1 234 5678 88</p>
+        <p>Email: info@example.com</p>
+        <div class="flex space-x-4 mt-2">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Useful Links -->
+      <div>
+        <h3 class="text-lg font-bold mb-2">Useful Links</h3>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:text-pink-400">Home</a></li>
+          <li><a href="#" class="hover:text-pink-400">About us</a></li>
+          <li><a href="#" class="hover:text-pink-400">Services</a></li>
+          <li><a href="#" class="hover:text-pink-400">Terms of service</a></li>
+          <li><a href="#" class="hover:text-pink-400">Privacy policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="text-lg font-bold mb-2">Our Services</h3>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:text-pink-400">Web Design</a></li>
+          <li><a href="#" class="hover:text-pink-400">Web Development</a></li>
+          <li><a href="#" class="hover:text-pink-400">Product Management</a></li>
+          <li><a href="#" class="hover:text-pink-400">Marketing</a></li>
+          <li><a href="#" class="hover:text-pink-400">Graphic Design</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div>
+        <h3 class="text-lg font-bold mb-2">Our Newsletter</h3>
+        <p>Subscribe to our newsletter and receive the latest news and updates.</p>
+        <div class="mt-2 flex">
+          <input type="email" placeholder="Enter your email"
+            class="w-full px-2 py-1 rounded-l bg-gray-700 text-white">
+          <button class="bg-pink-500 px-4 rounded-r hover:bg-pink-600">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-10 text-sm text-gray-400">
+      <p>&copy; Copyright Sailer. All Rights Reserved</p>
+      <p>Designed by <a href="#" class="text-pink-400">BootstrapMade</a></p>
+    </div>
+  </footer>
+</body>
+</html>

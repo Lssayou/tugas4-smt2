@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang Kami - BabyMonster</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <img src="logo bm.jpg " alt="Logo" class="h-8 w-8 rounded" />
+        <span class="text-lg font-bold">BabyMonster</span>
+      </div>
+      <ul class="flex space-x-4">
+        <li><a href="index.html" class="hover:text-pink-400">Home</a></li>
+        <li><a href="#about" class="hover:text-pink-400">About</a></li>
+        <li><a href="group.html" class="hover:text-pink-400">Member</a></li>
+        <li><a href="portofolio.html" class="hover:text-pink-400">Portofolio</a></li>
+        <li><a href="buyticket.html" class="hover:text-pink-400">Buy Ticket</a></li>
+      </ul>
+      <div class="relative">
+        <input type="text" placeholder="Search..." class="px-3 py-1 rounded bg-gray-700 text-white" />
+        <button class="absolute right-0 top-0 mt-1 mr-2 text-white"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Carousel -->
+  <div class="relative w-full h-[500px] overflow-hidden" id="heroCarousel">
+    <div class="w-full h-full flex transition-transform duration-1000 ease-in-out" id="carouselSlides">
+      <div class="w-full h-full bg-cover bg-center flex-shrink-0" style="background-image: url('banner\ 1.jpg');"></div>
+      <div class="w-full h-full bg-cover bg-center flex-shrink-0" style="background-image: url('banner\ 2.jpg');"></div>
+    </div>
+    <div class="absolute inset-0 flex flex-col justify-center items-center bg-black/50 text-center text-white px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">BABYMONSTER Concert 2025</h1>
+      <p class="text-lg mb-6">Tur Dunia Pertama di Jakarta - ICE BSD 14 Juni</p>
+      <a href="buyticket.html" class="bg-pink-600 hover:bg-pink-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition">
+        Buy Ticket
+      </a>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl font-bold text-center mb-8">About Us</h1>
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-3xl font-bold mb-4">Who <span class="text-pink-500">we are</span></h2>
+          <p class="mb-2">Babymonster, yang juga dikenal sebagai Baemon, adalah girl grup Korea Selatan yang dibentuk oleh YG Entertainment.</p>
+          <p class="mb-2">BABYMONSTER akan menggelar konser tunggal pertama mereka di Jakarta pada 14 Juni 2025, bertajuk "2025 BABYMONSTER 1st World Tour [Hello Monsters] in Jakarta!" Konser akan diselenggarakan di ICE BSD City Hall 5-6. Tiket konser akan dijual mulai 17 Maret 2025 untuk Weverse Fansclub Member Presale, dan 20 Maret 2025 untuk umum.</p>
+        </div>
+        <div>
+          <img src="about.jpg" alt="About Us" class="rounded-lg shadow-lg" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-10">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-lg font-bold mb-2">Sailer</h3>
+        <p>123 Adam Street, New York, NY 535022</p>
+        <p>Phone: +1 234 5678 88</p>
+        <p>Email: info@example.com</p>
+        <div class="flex space-x-4 mt-2">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Useful Links -->
+      <div>
+        <h3 class="text-lg font-bold mb-2">Useful Links</h3>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:text-pink-400">Home</a></li>
+          <li><a href="#" class="hover:text-pink-400">About us</a></li>
+          <li><a href="#" class="hover:text-pink-400">Services</a></li>
+          <li><a href="#" class="hover:text-pink-400">Terms of service</a></li>
+          <li><a href="#" class="hover:text-pink-400">Privacy policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="text-lg font-bold mb-2">Our Services</h3>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:text-pink-400">Web Design</a></li>
+          <li><a href="#" class="hover:text-pink-400">Web Development</a></li>
+          <li><a href="#" class="hover:text-pink-400">Product Management</a></li>
+          <li><a href="#" class="hover:text-pink-400">Marketing</a></li>
+          <li><a href="#" class="hover:text-pink-400">Graphic Design</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div>
+        <h3 class="text-lg font-bold mb-2">Our Newsletter</h3>
+        <p>Subscribe to our newsletter and receive the latest news and updates.</p>
+        <div class="mt-2 flex">
+          <input type="email" placeholder="Enter your email" class="w-full px-2 py-1 rounded-l bg-gray-700 text-white" />
+          <button class="bg-pink-500 px-4 rounded-r hover:bg-pink-600">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-10 text-sm text-gray-400">
+      <p>&copy; Copyright Sailer. All Rights Reserved</p>
+      <p>Designed by <a href="#" class="text-pink-400">BootstrapMade</a></p>
+    </div>
+  </footer>
+</body>
+</html>
